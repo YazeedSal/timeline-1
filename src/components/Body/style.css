@@ -1,5 +1,5 @@
 .body{
-    border: 5px dotted red;
+    align-self: flex-start;
     height: 100%;
     width: 95%;
 }

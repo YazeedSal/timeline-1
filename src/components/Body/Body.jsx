@@ -1,29 +1,18 @@
 import React, { useState } from "react";
 import "./style.css";
 import { Button, Input } from "@material-ui/core";
-import MyTimeLine from "./MyTimeLine";
+import MyTimeLine from "../Timeline/MyTimeLine";
 
 const Body = (props) => {
-  const { user } = props;
-  const [timeline, setTimeline] = useState([]);
-  const [input, setInput] = useState("");
-  const handleClick = function () {
-    const newTimeLine = [...timeline, input];
-    setTimeline(newTimeLine)
-    setInput('')
-  };
+  const { user,expenses,handleGetExpenses } = props;
+
 
   return (
     <div className="body">
       Body - {user}
-      <br/>
-      <Input
-        autoFocus
-        value={input}
-        onChange={(event) => setInput(event.target.value)}
-      />
-      <Button onClick={handleClick}>click me</Button>
-      <MyTimeLine timeline={timeline} />
+      <br />
+
+      <MyTimeLine expenses={expenses} title="my timeline" handleGetExpenses={handleGetExpenses}/>
     </div>
   );
 };

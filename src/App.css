@@ -1,12 +1,10 @@
 .expensesApp {
-  border: 5px solid blue;
-  height: 85vh;
   width: 80vw;
   display: grid;
-  grid-template-rows: 1fr 1fr 4fr;
+  grid-template-columns: 1fr;
   row-gap: 20px;
   align-items: center;
-  justify-items: center;
+  justify-items: flex-start;
   padding: 50px;
   margin-left: auto;
   margin-right: auto;
