@@ -1,11 +1,4 @@
 import React from "react";
-import {
-  TimelineConnector,
-  TimelineContent,
-  TimelineDot,
-  TimelineItem,
-  TimelineSeparator,
-} from "@material-ui/lab";
 import { deleteExpense } from "../../services/ApiManager";
 const MyTimelineItem = (props) => {
   const { expense, handleGetExpenses } = props;
