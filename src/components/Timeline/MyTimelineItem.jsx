@@ -14,7 +14,7 @@ const MyTimelineItem = (props) => {
     padding: "8px 1px",
     textAlign: "center",
   };
-  const handleDelete = async function () {
+  const handleDelete = async function() {
     try {
       await deleteExpense(expense._id);
       handleGetExpenses();
@@ -23,18 +23,10 @@ const MyTimelineItem = (props) => {
     }
   };
   return (
-    <TimelineItem>
-      <TimelineSeparator>
-        <TimelineDot color="primary" />
-        <TimelineConnector />
-      </TimelineSeparator>
-      <TimelineContent>
-        <Paper elevation={3} style={paperstyle}>
-          {expense.title} - {expense.amount} NIS
-          <button onClick={handleDelete}>delete</button>
-        </Paper>
-      </TimelineContent>
-    </TimelineItem>
+    <div>
+      {expense.title} - {expense.amount} NIS
+      <button onClick={handleDelete}>delete</button>
+    </div>
   );
 };
 
