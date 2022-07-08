@@ -20,7 +20,8 @@
   },
   "scripts": {
     "startServer": "nodemon server/index",
-    "start": "react-scripts start",
+    "startDev": "react-scripts start",
+    "start" : "node server/index",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

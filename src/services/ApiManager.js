@@ -1,5 +1,7 @@
 import axios from "axios";
-const EXPENSE_URI = "http://localhost:3001/expenses";
+// const EXPENSE_URI = "http://localhost:8080/expenses";
+const EXPENSE_URI = "/expenses";
+
 export const getExpenses = async function () {
   const response = await axios.get(EXPENSE_URI);
   return response.data;
