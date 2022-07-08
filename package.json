@@ -19,7 +19,7 @@
   "scripts": {
     "startServer": "nodemon server/index",
     "startDev": "react-scripts start",
-    "start" : "node server/index",
+    "start": "node server/index",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
