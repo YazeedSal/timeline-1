@@ -1,11 +1,11 @@
 import React from "react";
 import { deleteExpense } from "../../services/ApiManager";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
 const MyTimelineItem = (props) => {
   const { expense, handleGetExpenses } = props;
-  const paperstyle = {
-    padding: "8px 1px",
-    textAlign: "center",
-  };
+ 
   const handleDelete = async function() {
     try {
       await deleteExpense(expense._id);
@@ -16,8 +16,17 @@ const MyTimelineItem = (props) => {
   };
   return (
     <div>
-      {expense.title} - {expense.amount} NIS
-      <button onClick={handleDelete}>delete</button>
+      <Card style={{ width: '9em' }}>
+      
+      <Card.Body>
+        <Card.Title>{expense.title}</Card.Title>
+        <Card.Text>
+        {expense.amount} NIS
+        </Card.Text>
+        <Button variant="warning" onClick={handleDelete}>delete</Button>
+      </Card.Body>
+    </Card>
+
     </div>
   );
 };

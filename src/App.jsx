@@ -3,9 +3,10 @@ import "./App.css";
 import Body from "./components/Body/Body";
 import Header from "./components/Header/Header";
 import { getExpenses } from "./services/ApiManager";
+import "bootstrap/dist/css/bootstrap.min.css"
+import {} from "react-bootstrap"
 
 function ExpensesApp() {
-  const [user, setUser] = useState("hamzeh");
   const [expenses, setExpenses] = useState([]);
 
   const handleGetExpenses = async function () {
@@ -22,10 +23,8 @@ function ExpensesApp() {
   }, []);
   return (
     <div className="expensesApp">
-      <Header user={user} handleGetExpenses={handleGetExpenses} />
+      <Header handleGetExpenses={handleGetExpenses} />
       <Body
-        user={user}
-        setUser={setUser}
         expenses={expenses}
         handleGetExpenses={handleGetExpenses}
       />

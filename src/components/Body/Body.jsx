@@ -8,10 +8,9 @@ const Body = (props) => {
 
   return (
     <div className="body">
-      Body - {user}
-      <br />
+     
 
-      <MyTimeLine expenses={expenses} title="my timeline" handleGetExpenses={handleGetExpenses}/>
+      <MyTimeLine expenses={expenses}  handleGetExpenses={handleGetExpenses}/>
     </div>
   );
 };

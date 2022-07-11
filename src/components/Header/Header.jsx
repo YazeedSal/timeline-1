@@ -25,7 +25,6 @@ const Header = (props) => {
   };
   return (
     <div className="header">
-      Header - {user} <br />
       <input
         autoFocus
         value={input.title}
