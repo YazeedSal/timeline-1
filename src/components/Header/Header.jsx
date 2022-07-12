@@ -25,6 +25,7 @@ const Header = (props) => {
   };
   return (
     <div className="header">
+      <div id="headerContainer">
       <input
         autoFocus
         value={input.title}
@@ -59,7 +60,9 @@ const Header = (props) => {
           }
         }}
       />
+
       <button onClick={handleClick}>click me</button>
+      </div>
     </div>
   );
 };

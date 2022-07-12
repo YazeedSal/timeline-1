@@ -1,5 +1,14 @@
-.body{
-    align-self: flex-start;
-    height: 100%;
-    width: 100%;
+.body {
+  align-self: flex-start;
+  height: 70%;
+  width: 100%;
+}
+#bodyContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-height: 200px;
 }

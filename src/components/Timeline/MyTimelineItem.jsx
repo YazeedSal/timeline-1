@@ -16,7 +16,7 @@ const MyTimelineItem = (props) => {
   };
   return (
     <div>
-      <Card style={{ width: '9em' }}>
+      <Card style={{ width: '29em' }}>
       
       <Card.Body>
         <Card.Title>{expense.title}</Card.Title>
