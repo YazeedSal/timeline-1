@@ -1,11 +1,9 @@
 .expensesApp {
   width: 100vw;
   height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr ;
-  row-gap: 20px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-items: flex-start;
   background-color: #333533;
   overflow-y: scroll;
 }

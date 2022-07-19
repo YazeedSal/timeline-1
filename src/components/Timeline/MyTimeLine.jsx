@@ -10,7 +10,6 @@ const MyTimeLine = (props) => {
         <MyTimelineItem
           key={i}
           expense={expense}
-          title={expense.title}
           handleGetExpenses={handleGetExpenses}
         />
       ))}
